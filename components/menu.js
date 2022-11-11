@@ -145,10 +145,8 @@ function initMenu(data) {
 		changeView: function changeView(lol) {
 			$('#dinamyComponentGroup').children().css('left', '-170%');
 			$('.' + lol.target.attributes.value.value).css('left', '0');
-			console.log(lol.target.attributes.value.value);
 		},
 		render: function render() {
-			console.log(this.props);
 			return React.createElement(
 				'div',
 				{ id: "subMenu2", onClick: this.changeView.bind(this), style: submenubutton, onMouseOver: this.handleMouseOver.bind(this), onMouseOut: this.handleMouseOut.bind(this), value: this.props.value, key: this.props.value },

@@ -88,7 +88,6 @@ var imageCloseButtom = {
 'use strict';
 
 $.get("http://api.openweathermap.org/data/2.5/weather?q=Madrid&units=metric&cnt=7&appid=ab68bc64552d2af53af0f6b928972688", function (data) {
-	//console.log(data)
 	initWeather(data);
 });
 
